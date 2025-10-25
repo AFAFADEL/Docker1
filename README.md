@@ -22,4 +22,24 @@ Verify Nginx page by running curl command from your local machine.
 Change in the index.html file in your local machine then verify Nginx page again.
 Verify logs is stored in the nginx_logs volume.
 Delete the volume.
+-------------------------------
+Lab 13: Custom Docker Network for Microservices 
+Clone the frontend and backend Code https://github.com/Ibrahim-Adel15/Docker5.git
+Write Dockerfile for frontend and create image.
+Use python image
+Install packages in requirements.txt file
+Expose port 5000
+Run python command on app.py 
+Write Dockerfile for backend and create image.
+Use python image
+Install flask
+Expose port 5000
+Run python command on app.py 
+Create a new network called ivolve-network.
+Run backend container using ivolve-network.
+Run frontend container (frontend1) using ivolve-network.
+Run another frontend container (frontend2) using default network.
+Verify the communication between containers.
+Delete ivolve-network
+------------------------------------
 -----------------------------
