@@ -42,4 +42,5 @@ Run another frontend container (frontend2) using default network.
 Verify the communication between containers.
 Delete ivolve-network
 ------------------------------------
+Lab 14: Containerized Node.js and MySQL Stack Using Docker Compose Clone the application source code from https://github.com/Ibrahim-Adel15/kubernets-app.git The application requires a MySQL connection and must find a database named ivolve to start working. Create docker-compose.yml file with: App service Build from the local Dockerfile Map port 3000 Use environment variables: DB_HOST DB_USER DB_PASSWORD db service Use MySQL image Set environment variable MYSQL_ROOT_PASSWORD db_data volume for /var/lib/mysql Verify app is working. Verify app /health & /ready. Verify app access logs at /app/logs/. Push the Docker image into your DockerHub.
 -----------------------------
