@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tolerant-pod
+spec:
+  tolerations:
+  - key: "workload"
+    operator: "Equal"
+    value: "worker"
+    effect: "NoSchedule"
+  containers:
+  - name: busybox
+    image: busybox
+    args: ["sleep","3600"]
+  restartPolicy: Never
